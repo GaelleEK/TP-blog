@@ -1,0 +1,12 @@
+{
+    "name": "acs/blog-grafikart",
+    "require": {
+        "altorouter/altorouter": "*"
+    },
+    "authors": [
+        {
+            "name": "gaelleEK",
+            "email": "elkadaouigaelle@gmail.com"
+        }
+    ]
+}
