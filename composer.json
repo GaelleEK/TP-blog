@@ -1,7 +1,16 @@
 {
     "name": "acs/blog-grafikart",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
     "require": {
-        "altorouter/altorouter": "*"
+        "altorouter/altorouter": "*",
+        "symfony/var-dumper": "^5.1",
+        "filp/whoops": "^2.9",
+        "ext-pdo": "*",
+        "fakerphp/faker": "^1.11"
     },
     "authors": [
         {
