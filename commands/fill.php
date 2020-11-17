@@ -26,6 +26,7 @@ for ($i = 0; $i < 50; $i++) {
                 content='{$faker->paragraphs(rand(3,15), true)}'");
                 $posts[] = $pdo->lastInsertId();
 };
+
 for ($i = 0; $i < 5; $i++) {
     $pdo->exec("INSERT INTO category 
                 SET name='{$faker->sentence(3)}', 
