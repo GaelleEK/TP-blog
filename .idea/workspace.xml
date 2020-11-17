@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e97d4904-0536-47ab-86f2-e5da70e89779" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Helpers/Text.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Post.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/post/card.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/fill.php" beforeDir="false" afterPath="$PROJECT_DIR$/commands/fill.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Router.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/post/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/post/index.php" afterDir="false" />
@@ -69,14 +65,18 @@
       <recent name="C:\Users\acs\code\BlogGrafikart\views" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Script.index.php">
     <configuration name="bdd.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/bdd.sql" />
       <script-mode>FILE</script-mode>
       <method v="2" />
     </configuration>
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/views/post/index.php">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.index.php" />
         <item itemvalue="Database Script.bdd.sql" />
       </list>
     </recent_temporary>
@@ -91,7 +91,7 @@
       <updated>1605348092480</updated>
       <workItem from="1605348094361" duration="972000" />
       <workItem from="1605349743312" duration="19111000" />
-      <workItem from="1605533134921" duration="17196000" />
+      <workItem from="1605533134921" duration="31835000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1605512382575</created>
@@ -107,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605540878884</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="listing d articles">
+      <created>1605603033681</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605603033681</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +148,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first commit" />
     <MESSAGE value="remplissage bdd avec fill.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="remplissage bdd avec fill.php" />
+    <MESSAGE value="listing d articles" />
+    <option name="LAST_COMMIT_MESSAGE" value="listing d articles" />
   </component>
 </project>

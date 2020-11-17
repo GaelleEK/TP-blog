@@ -3,8 +3,8 @@
 use Whoops\Handler\PrettyPageHandler;
 use Whoops\Run;
 
-require 'C:/Users/acs/code/BlogGrafikart/vendor/autoload.php';
-//require 'vendor/autoload.php';
+//require 'C:/Users/acs/code/BlogGrafikart/vendor/autoload.php';
+require '../vendor/autoload.php';
 
 define('DEBUG_TIME', microtime(true));
 
@@ -14,7 +14,9 @@ $whoops->register();
 
 $router = new App\Router(dirname(__DIR__).'/views');
 $router
-    -> get('/blog','post/index','blog')
+    -> get('/','post/index','home')
     -> get('/blog/[*:slug]-[i:id]', 'post/show', 'post')
     -> get('/blog/category','category/show','category')
     -> run();
+
+//dd($match['target']);
