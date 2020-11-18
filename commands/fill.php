@@ -1,13 +1,11 @@
 <?php
+use App\Connection;
+
 require 'C:/Users/acs/code/BlogGrafikart/vendor/autoload.php';
 
 $faker = Faker\Factory::create('fr_FR');
 
-
-
-$pdo = new PDO('mysql:dbname=tpblog;host=127.0.0.1', 'root', 'toortoor', [
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-]);
+$pdo = Connection::getPDO();
 
 $pdo->exec('SET FOREIGN_KEY_CHECKS = 0');
 $pdo->exec('TRUNCATE TABLE post_category');

@@ -1,27 +1,15 @@
 <?php
 use App\Helpers\Text;
 use App\Model\Post;
+use App\Connection;
+use App\URL;
 
 
 $title = 'Mon Blog';
-$pdo = new PDO('mysql:dbname=tpblog;host=127.0.0.1', 'root', 'toortoor', [
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-]);
+$pdo = Connection::getPDO();
 
-$page = $_GET['page'] ?? 1;
+$currentPage = URL::getPositiveInt('page', 1);
 
-if (!filter_var($page, FILTER_VALIDATE_INT)) {
-    throw new Exception('Numéro de page invalide');
-}
-if ($page === '1') {
-    header('location: '. $router->url('home'));
-    http_response_code(301);
-    exit();
-}
-$currentPage = (int)$page;
-if ($currentPage <= 0) {
-    throw new Exception('Numéro de page invalide');
-}
 $count = (int)$pdo->query('SELECT COUNT(id) FROM post')->fetch(PDO::FETCH_NUM)[0];
 $perPage = 12;
 $pages = ceil($count / $perPage);
