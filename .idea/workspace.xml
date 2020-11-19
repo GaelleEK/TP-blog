@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e97d4904-0536-47ab-86f2-e5da70e89779" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Model/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/post/show.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/fill.php" beforeDir="false" afterPath="$PROJECT_DIR$/commands/fill.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/URL.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/URL.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/post/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/post/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/category/show.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/category/show.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layouts/default.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/default.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +88,7 @@
       <workItem from="1605348094361" duration="972000" />
       <workItem from="1605349743312" duration="19111000" />
       <workItem from="1605533134921" duration="44696000" />
-      <workItem from="1605690257389" duration="24897000" />
+      <workItem from="1605690257389" duration="28493000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1605512382575</created>
@@ -134,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605693712875</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="pagination page article">
+      <created>1605774600401</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605774600401</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +169,7 @@
     <MESSAGE value="listing d articles" />
     <MESSAGE value="pagination" />
     <MESSAGE value="simplification gestion url" />
-    <option name="LAST_COMMIT_MESSAGE" value="simplification gestion url" />
+    <MESSAGE value="pagination page article" />
+    <option name="LAST_COMMIT_MESSAGE" value="pagination page article" />
   </component>
 </project>
