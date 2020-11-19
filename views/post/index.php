@@ -5,6 +5,7 @@ use App\Connection;
 use App\URL;
 
 
+
 $title = 'Mon Blog';
 $pdo = Connection::getPDO();
 

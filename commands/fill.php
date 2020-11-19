@@ -10,7 +10,8 @@ $pdo = Connection::getPDO();
 $pdo->exec('SET FOREIGN_KEY_CHECKS = 0');
 $pdo->exec('TRUNCATE TABLE post_category');
 $pdo->exec('TRUNCATE TABLE post');
-$pdo->exec('TRUNCATE TABLE category');$pdo->exec('TRUNCATE TABLE user');
+$pdo->exec('TRUNCATE TABLE category');
+$pdo->exec('TRUNCATE TABLE user');
 $pdo->exec('SET FOREIGN_KEY_CHECKS = 1');
 
 $posts = [];
@@ -35,7 +36,7 @@ for ($i = 0; $i < 5; $i++) {
 foreach ($posts as $post) {
     $randomCategories = $faker->randomElements($categories, rand(0, count($categories)));
     foreach ($randomCategories as $category) {
-        $pdo->exec("INSERT INTO post_category SET post_id=$post, category_id=$category");
+        $pdo->exec("INSERT INTO post_category SET post_id = '$post', category_id = '$category'");
     }
 };
 

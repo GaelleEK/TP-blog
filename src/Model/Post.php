@@ -39,4 +39,9 @@ class Post {
     {
         return $this->id;
     }
+
+    public function getFormattedContent(): ?string
+    {
+        return nl2br(e($this->content));
+    }
 }
