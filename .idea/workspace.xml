@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e97d4904-0536-47ab-86f2-e5da70e89779" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/PaginatedQuery.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Post.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/category/show.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/category/show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layouts/default.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/default.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/post/card.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/post/card.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/post/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/post/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605774600401</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="refactoring pagination article et categorie">
+      <created>1605881885988</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605881885988</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +180,7 @@
     <MESSAGE value="pagination" />
     <MESSAGE value="simplification gestion url" />
     <MESSAGE value="pagination page article" />
-    <option name="LAST_COMMIT_MESSAGE" value="pagination page article" />
+    <MESSAGE value="refactoring pagination article et categorie" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring pagination article et categorie" />
   </component>
 </project>
