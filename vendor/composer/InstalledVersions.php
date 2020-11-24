@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '7861a5e335641c74887194bd52f53a2c973364e2',
+    'reference' => '8712e0ed10488de994c06d9b007c7666873afdcd',
     'name' => 'acs/blog-grafikart',
   ),
   'versions' => 
@@ -31,7 +31,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '7861a5e335641c74887194bd52f53a2c973364e2',
+      'reference' => '8712e0ed10488de994c06d9b007c7666873afdcd',
     ),
     'altorouter/altorouter' => 
     array (
@@ -95,6 +95,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '4e13f3fcefb1fcaaa5efb5403581406f4e840b9a',
+    ),
+    'vlucas/valitron' => 
+    array (
+      'pretty_version' => 'v1.4.5',
+      'version' => '1.4.5.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c3b4dac8586291990e6398961852e972600ac7b5',
     ),
   ),
 );

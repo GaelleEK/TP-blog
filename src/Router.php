@@ -21,15 +21,21 @@ class Router {
         $this->router = new \AltoRouter();
     }
 
-    public function get(string $url, string $view, ?string $name = null)
+    public function get(string $url, string $view, ?string $name = null): self
     {
         $this->router->map('GET', $url, $view, $name);
         return $this;
     }
 
-    public function post(string $url, string $view, ?string $name = null)
+    public function post(string $url, string $view, ?string $name = null): self
     {
         $this->router->map('POST', $url, $view, $name);
+        return $this;
+    }
+
+    public function match(string $url, string $view, ?string $name = null): self
+    {
+        $this->router->map('POST|GET', $url, $view, $name);
         return $this;
     }
 

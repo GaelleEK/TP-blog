@@ -11,7 +11,8 @@
         "symfony/var-dumper": "^5.1",
         "filp/whoops": "^2.9",
         "ext-pdo": "*",
-        "fakerphp/faker": "^1.11"
+        "fakerphp/faker": "^1.11",
+        "vlucas/valitron": "1.4.5"
     },
     "authors": [
         {
