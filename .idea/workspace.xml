@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e97d4904-0536-47ab-86f2-e5da70e89779" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Table/CategoryTable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Table/Exception/NotFoundException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Table/PostTable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Table/Table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/post/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/post/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/post/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/post/new.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/category/show.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/category/show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/post/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/post/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/post/show.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/post/show.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Table/PostTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Table/PostTable.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,8 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="tasks" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -151,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606134103258</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="création class Table">
+      <created>1606143395651</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606143395651</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +200,7 @@
     <MESSAGE value="pagination page article" />
     <MESSAGE value="refactoring pagination article et categorie" />
     <MESSAGE value="affichage des catégories sur le listing" />
-    <option name="LAST_COMMIT_MESSAGE" value="affichage des catégories sur le listing" />
+    <MESSAGE value="création class Table" />
+    <option name="LAST_COMMIT_MESSAGE" value="création class Table" />
   </component>
 </project>
