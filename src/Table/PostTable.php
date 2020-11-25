@@ -11,10 +11,13 @@ final class PostTable extends Table {
 
     public function update (Post $post): void
     {
-        $query = $this->pdo->prepare("UPDATE {$this->table} SET name = :name  WHERE id = :id");
+        $query = $this->pdo->prepare("UPDATE {$this->table} SET name = :name, slug = :slug, created_at = :created, content = :content WHERE id = :id");
         $ok = $query->execute([
             'id' => $post->getID(),
-            'name' => $post->getName()
+            'name' => $post->getName(),
+            'slug' => $post->getSlug(),
+            'content' => $post->getContent(),
+            'created' => $post->getCreatedAt()->format('Y-m-d H:i:s')
         ]);
         if ($ok === false) {
             throw new \Exception("Impossible de mettre à jour l'enregistrement $id dans la table {$this->table}");
