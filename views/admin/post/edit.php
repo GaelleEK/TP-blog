@@ -2,8 +2,9 @@
 
 use App\Connection;
 use App\Table\PostTable;
-use App\Validator;
 use App\HTML\Form;
+use App\Validators\PostValidator;
+use App\Validator;
 
 
 $pdo = Connection::getPDO();
@@ -15,9 +16,7 @@ $errors = [];
 
 if (!empty($_POST)) {
     Validator::lang('fr');
-    $v = new Validator($_POST);
-    $v->rule('required', ['name', 'slug']);
-    $v->rule('lengthBetween', ['name', 'slug'], 3, 200);
+    $v = new PostValidator($_POST, $postTable, $post->getID());
     $post
         ->setName($_POST['name'])
         ->setContent($_POST['content'])
