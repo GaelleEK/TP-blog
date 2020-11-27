@@ -2,9 +2,7 @@
 
 use App\Connection;
 use App\Table\PostTable;
-use App\Auth;
 
-Auth::check();
 
 $title = "Administration";
 $pdo = Connection::getPDO();

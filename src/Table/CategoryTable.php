@@ -15,8 +15,9 @@ final class CategoryTable extends Table {
     {
         $postsByID = [];
         foreach ($posts as $post) {
-            $postsByID[$post->getID()] = $post;}
-        $implodeId = implode(",",array_keys($postsByID));
+            $postsByID[$post->getID()] = $post;
+        }
+        $implodeId = implode(',',array_keys($postsByID));
         $categories = $this->pdo
             ->query("SELECT c.*, pc.post_id 
                                     FROM post_category pc 
@@ -24,6 +25,14 @@ final class CategoryTable extends Table {
                                     WHERE pc.post_id IN ($implodeId)")
             ->fetchAll(PDO::FETCH_CLASS, $this->class);
         foreach ($categories as $category) {
-            $postsByID[$category->getPostID()]->addCategory($category);}
+            $postsByID[$category->getPostID()]->addCategory($category);
+        }
     }
+
+    public function all (): array
+    {
+        return $this->queryAndFetchAll("SELECT * FROM {$this->table} ORDER BY id DESC");
+
+    }
+
 }

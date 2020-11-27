@@ -1,6 +1,7 @@
 <?php
 namespace App\Table;
 use App\Table\Exception\NotFoundException;
+use http\Params;
 use PDO;
 
 abstract class Table {
@@ -22,7 +23,7 @@ abstract class Table {
 
     public function find(int $id)
     {
-        $query = $this->pdo->prepare("SELECT * FROM $this->table WHERE id= :id");
+        $query = $this->pdo->prepare("SELECT * FROM {$this->table} WHERE id= :id");
         $query->execute(['id'=>$id]);
         $query->setFetchMode(PDO::FETCH_CLASS, $this->class);
         $result = $query->fetch();
@@ -51,5 +52,53 @@ abstract class Table {
 
     }
 
+    public function all (): array
+    {
+        $sql = "SELECT * FROM {$this->table}";
+        return $this->pdo->query($sql, PDO::FETCH_CLASS, $this->class)->fetchAll();
+
+    }
+
+    public function delete (int $id)
+    {
+        $query = $this->pdo->prepare("DELETE FROM {$this->table} WHERE id = ?");
+        $ok = $query->execute([$id]);
+        if ($ok === false) {
+            throw new \Exception("Impossible de supprimer l'enregistrement $id dans la table {$this->table}");
+        }
+    }
+
+    public function create (array $data): int
+    {
+        $sqlFields = [];
+        foreach ($data as $key=>$value) {
+            $sqlFields[] = "$key = :$key";
+        }
+        $query = $this->pdo->prepare("INSERT INTO {$this->table} SET ". implode(', ', $sqlFields));
+        $ok = $query->execute($data);
+        if ($ok === false) {
+            throw new \Exception("Impossible de créer l'enregistrement dans la table {$this->table}");
+        }
+        return (int)$this->pdo->lastInsertId();
+    }
+
+    public function update (array $data, int $id)
+    {
+        $sqlFields = [];
+        foreach ($data as $key=>$value) {
+            $sqlFields[] = "$key = :$key";
+        }
+        $implodeSql = implode(', ', $sqlFields);
+        $query = $this->pdo->prepare("UPDATE {$this->table} SET {$implodeSql} WHERE id = :id");
+        $ok = $query->execute(array_merge($data, ['id'=>$id]));
+        if ($ok === false) {
+            throw new \Exception("Impossible de modifier l'enregistrement dans la table {$this->table}");
+        }
+    }
+
+    public function queryAndFetchAll (string $sql): array
+    {
+        return $this->pdo->query($sql, PDO::FETCH_CLASS, $this->class)->fetchAll();
+    }
 
 }
