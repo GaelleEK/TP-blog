@@ -41,11 +41,13 @@ class Category {
         return $this;
     }
 
-    public function getPostID(): ?int {
+    public function getPostID(): ?int
+    {
         return $this->post_id;
     }
 
-    public function setPost(Post $post): Post
+
+    public function setPost(Post $post)
     {
         return $this->post = $post;
     }

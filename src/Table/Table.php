@@ -1,7 +1,7 @@
 <?php
 namespace App\Table;
+use App\Model\Category;
 use App\Table\Exception\NotFoundException;
-use http\Params;
 use PDO;
 
 abstract class Table {
@@ -71,7 +71,7 @@ abstract class Table {
     public function create (array $data): int
     {
         $sqlFields = [];
-        foreach ($data as $key=>$value) {
+        foreach ($data as $key => $value) {
             $sqlFields[] = "$key = :$key";
         }
         $query = $this->pdo->prepare("INSERT INTO {$this->table} SET ". implode(', ', $sqlFields));

@@ -12,12 +12,12 @@ final class PostTable extends Table {
     public function updatePost (Post $post): void
     {
         $this->update([
-            'id' => $post->getID(),
             'name' => $post->getName(),
             'slug' => $post->getSlug(),
             'content' => $post->getContent(),
             'created_at' => $post->getCreatedAt()->format('Y-m-d H:i:s')
         ], $post->getID());
+
     }
 
 
@@ -29,16 +29,24 @@ final class PostTable extends Table {
             'content' => $post->getContent(),
             'created_at' => $post->getCreatedAt()->format('Y-m-d H:i:s')
         ]);
-
         $post->setID($id);
+
     }
 
+    public function attachCategories (int $id, array $categories)
+    {
+        $this->pdo->exec('DELETE FROM post_category WHERE post_id = '. $id);
+        $query = $this->pdo->prepare('INSERT INTO post_category SET post_id = ?, category_id = ?');
+        foreach ($categories as $category) {
+            $query->execute([$id, $category]);
+        }
+    }
 
-    public function findPaginated (): array
+    public function findPaginated ()
     {
         $paginatedQuery = new PaginatedQuery(
             "SELECT * FROM {$this->table} ORDER BY created_at DESC",
-            "SELECT COUNT(id) FROM post",
+            "SELECT COUNT(id) FROM {$this->table}",
             $this->pdo);
         $posts = $paginatedQuery->getItems(Post::class);
         (new CategoryTable($this->pdo))->hydratePosts($posts);

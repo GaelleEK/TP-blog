@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e97d4904-0536-47ab-86f2-e5da70e89779" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Validators/CategoryValidator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/category/_form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/category/delete.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/category/edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/category/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/category/new.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/layouts/default.php" afterDir="false" />
+    <list default="true" id="e97d4904-0536-47ab-86f2-e5da70e89779" name="Default Changelist" comment="gestion des catégories /admin/category">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HTML/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/HTML/Form.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Post.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Table/CategoryTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Table/CategoryTable.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Table/PostTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Table/PostTable.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Table/Table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Table/Table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validators/PostValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validators/PostValidator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/post/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/post/_form.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/admin/post/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/post/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/post/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/post/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/admin/post/new.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/post/new.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -210,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606385922779</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="gestion des catégories /admin/category">
+      <created>1606472883530</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1606472883530</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +258,7 @@
     <MESSAGE value="gestion des formulaires /Form.php" />
     <MESSAGE value="valider les données /postvalidator.php" />
     <MESSAGE value="création d'un article /ObjectHelper.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="création d'un article /ObjectHelper.php" />
+    <MESSAGE value="gestion des catégories /admin/category" />
+    <option name="LAST_COMMIT_MESSAGE" value="gestion des catégories /admin/category" />
   </component>
 </project>
