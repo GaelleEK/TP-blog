@@ -17,6 +17,11 @@
         <li class="nav-item">
             <a href="<?= $router->url('admin_categories') ?>" class="nav-link">Catégories</a>
         </li>
+        <li class="nav-item">
+            <form action="<?= $router->url('logout') ?>" method="POST" style="display: inline">
+                <button type="submit" class="nav-link" style="background: transparent; border: none">Se déconnecter</button>
+            </form>
+        </li>
     </ul>
 </nav>
 

@@ -101,4 +101,5 @@ abstract class Table {
         return $this->pdo->query($sql, PDO::FETCH_CLASS, $this->class)->fetchAll();
     }
 
+
 }

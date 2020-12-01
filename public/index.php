@@ -11,8 +11,9 @@ $whoops = new Run;
 $whoops->pushHandler(new PrettyPageHandler);
 $whoops->register();
 
-
+/*//si get page est initialisé et =1 alors :
 if (isset($_GET['page']) && $_GET['page'] === '1') {
+    //réecris l'url sans le param ?page et on redirige vers cet url
     $uri = explode('?', $_SERVER['REQUEST_URI'])[0];
     $get = $_GET;
     unset($get['page']);
@@ -23,13 +24,16 @@ if (isset($_GET['page']) && $_GET['page'] === '1') {
     http_response_code(301);
     header('Location: ' . $uri);
     exit();
-}
+}*/
+
 $router = new App\Router(dirname(__DIR__).'/views');
 $router
     -> get('/','post/index','home')
     -> get('/blog/category/[*:slug]-[i:id]','category/show','category')
     -> get('/blog/[*:slug]-[i:id]', 'post/show', 'post')
     //ADMIN
+    ->match('/login', 'auth/login', 'login')
+    -> post('/logout', 'auth/logout', 'logout')
     //Gestion des articles
     -> get('/admin', 'admin/post/index', 'admin_posts')
     -> match('/admin/post/[i:id]', 'admin/post/edit', 'admin_post')

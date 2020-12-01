@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e97d4904-0536-47ab-86f2-e5da70e89779" name="Default Changelist" comment="gestion des catégories /admin/category">
+    <list default="true" id="e97d4904-0536-47ab-86f2-e5da70e89779" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Model/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/ForbiddenException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Table/UserTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/auth/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/auth/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/e404.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HTML/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/HTML/Form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Table/CategoryTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Table/CategoryTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Table/PostTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Table/PostTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Table/Exception/NotFoundException.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Table/Exception/NotFoundException.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Table/Table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Table/Table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Validator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Validators/PostValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validators/PostValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/post/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/post/_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/post/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/post/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/post/new.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/post/new.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/layouts/default.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/layouts/default.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/post/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/post/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +57,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Validators" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Table" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -68,13 +71,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\acs\code\BlogGrafikart\src\Table" />
       <recent name="C:\Users\acs\code\BlogGrafikart\src\Validators" />
       <recent name="C:\Users\acs\code\BlogGrafikart\views\admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\acs\code\BlogGrafikart\views" />
       <recent name="C:\Users\acs\code\BlogGrafikart\src" />
       <recent name="C:\Users\acs\code\BlogGrafikart\views\layouts" />
-      <recent name="C:\Users\acs\code\BlogGrafikart\views" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Script.index.php">
@@ -211,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606472883530</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="liaison article catégories">
+      <created>1606730326176</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1606730326176</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,6 +270,7 @@
     <MESSAGE value="valider les données /postvalidator.php" />
     <MESSAGE value="création d'un article /ObjectHelper.php" />
     <MESSAGE value="gestion des catégories /admin/category" />
-    <option name="LAST_COMMIT_MESSAGE" value="gestion des catégories /admin/category" />
+    <MESSAGE value="liaison article catégories" />
+    <option name="LAST_COMMIT_MESSAGE" value="liaison article catégories" />
   </component>
 </project>
